@@ -1,0 +1,17 @@
+<!-- layout -->
+<header>
+  <nav>
+    <span>Bowling-Calculator</span>
+  </nav>
+</header>
+<main>
+  <!-- app content -->
+  <div *ngIf="!isDataProvided">
+    <app-data-input></app-data-input>
+  </div>
+  <div *ngIf="isDataProvided">
+    <app-data-show></app-data-show>
+  </div>
+  <!-- end of app content -->
+</main>
+<!-- end of layout -->

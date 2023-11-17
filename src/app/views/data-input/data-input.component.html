@@ -1,0 +1,12 @@
+<h1>Select file with bowling data</h1>
+<label for="file" class="drop-container" id="dropcontainer">
+  <span class="drop-title">Drop files here</span>
+  or
+  <input
+    type="file"
+    id="data-input"
+    accept="*"
+    (change)="onFileSelected($event)"
+    required
+  />
+</label>

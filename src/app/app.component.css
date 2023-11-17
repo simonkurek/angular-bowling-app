@@ -1,0 +1,17 @@
+nav {
+  background-color: #553739;
+  color: #fbfffe;
+  border-bottom: 1px solid #eee;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 1em;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 4em);
+  justify-content: center;
+}

@@ -1,0 +1,18 @@
+<h1>Bowling Game Result</h1>
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Total Score</th>
+    <th *ngFor="let roundIndex of roundIndexs">
+      {{ roundIndex + 1 }}
+    </th>
+  </tr>
+
+  <tr *ngFor="let player of game.players">
+    <td>{{ player.name }}</td>
+    <td>{{ player.score.getTotalScore() }}</td>
+    <td *ngFor="let frame of player.score.getPoints()">
+      {{ frame.value }}
+    </td>
+  </tr>
+</table>
